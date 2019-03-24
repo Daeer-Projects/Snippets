@@ -11,3 +11,4 @@ Still just a work in progress.
 ## Tools
 
 1. Azure Data Studio.
+2. SQL Server Management Studio.
