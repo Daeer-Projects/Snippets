@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <_locDefinition xmlns="urn:locstudio">
+    <_locDefault _loc="locNone" />
+    <_locTag _loc="locData">Title</_locTag>
+    <_locTag _loc="locData">Description</_locTag>
+    <_locTag _loc="locData">Author</_locTag>
+    <_locTag _loc="locData">ToolTip</_locTag>
+    <_locTag _loc="locData">Default</_locTag>
+  </_locDefinition>
   <CodeSnippet Format="1.0.0">
     <Header>
       <Title>What the statement</Title>
       <Shortcut>wtf</Shortcut>
       <Description>Describes what you are feeling!</Description>
-      <Author>Devart</Author>
+      <Author>Daeer73</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations />
-      <Code Language="SQL Server" Kind="SQL Server"><![CDATA[/****************************************************************************************************************************
+      <Declarations>
+        <Literal>
+          <ID>What</ID>
+          <ToolTip>Describes what you are feeling!</ToolTip>
+          <Default>What</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="SQL"><![CDATA[/****************************************************************************************************************************
 ____    __    ____  __    __       ___      .___________.   .___________. __    __   _______              ______    ______   
 \   \  /  \  /   / |  |  |  |     /   \     |           |   |           ||  |  |  | |   ____|            |      \  |      \  
  \   \/    \/   /  |  |__|  |    /  ^  \    `---|  |----`   `---|  |----`|  |__|  | |  |__               `----)  | `----)  | 
@@ -20,7 +34,8 @@ ____    __    ____  __    __       ___      .___________.   .___________. __    
    \    /\    /    |  |  |  |  /  _____  \      |  |            |  |     |  |  |  | |  |____  __  __  __    |__|      |__|   
     \__/  \__/     |__|  |__| /__/     \__\     |__|            |__|     |__|  |__| |_______|(__)(__)(__)    __        __    
                                                                                                             (__)      (__)   
-****************************************************************************************************************************/]]></Code>
+****************************************************************************************************************************/
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

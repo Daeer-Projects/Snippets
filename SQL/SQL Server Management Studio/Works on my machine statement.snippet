@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <_locDefinition xmlns="urn:locstudio">
+    <_locDefault _loc="locNone" />
+    <_locTag _loc="locData">Title</_locTag>
+    <_locTag _loc="locData">Description</_locTag>
+    <_locTag _loc="locData">Author</_locTag>
+    <_locTag _loc="locData">ToolTip</_locTag>
+    <_locTag _loc="locData">Default</_locTag>
+  </_locDefinition>
   <CodeSnippet Format="1.0.0">
     <Header>
       <Title>Works on my machine statement</Title>
       <Shortcut>womm</Shortcut>
       <Description>A statement used all the time!</Description>
-      <Author>Devart</Author>
+      <Author>Daeer73</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations />
-      <Code Language="SQL Server" Kind="SQL Server"><![CDATA[/***********************************************************************************************************************************************************************************************************
+      <Declarations>
+        <Literal>
+          <ID>WOMM</ID>
+          <ToolTip>A statement used all the time!</ToolTip>
+          <Default>WOMM</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="SQL"><![CDATA[/***********************************************************************************************************************************************************************************************************
 ____    __    ____   ______   .______       __  ___      _______.     ______   .__   __.    .___  ___. ____    ____    .___  ___.      ___        ______  __    __   __  .__   __.  _______  __        ___  
 \   \  /  \  /   /  /  __  \  |   _  \     |  |/  /     /       |    /  __  \  |  \ |  |    |   \/   | \   \  /   /    |   \/   |     /   \      /      ||  |  |  | |  | |  \ |  | |   ____||  |     _ \  \ 
  \   \/    \/   /  |  |  |  | |  |_)  |    |  '  /     |   (----`   |  |  |  | |   \|  |    |  \  /  |  \   \/   /     |  \  /  |    /  ^  \    |  ,----'|  |__|  | |  | |   \|  | |  |__   |  |    (_) |  |
@@ -20,7 +34,8 @@ ____    __    ____   ______   .______       __  ___      _______.     ______   .
    \    /\    /    |  `--'  | |  |\  \----.|  .  \  .----)   |      |  `--'  | |  |\   |    |  |  |  |     |  |        |  |  |  |  /  _____  \  |  `----.|  |  |  | |  | |  |\   | |  |____ |__|     _  |  |
     \__/  \__/      \______/  | _| `._____||__|\__\ |_______/        \______/  |__| \__|    |__|  |__|     |__|        |__|  |__| /__/     \__\  \______||__|  |__| |__| |__| \__| |_______|(__)    (_) |  |
                                                                                                                                                                                                        /__/ 
-************************************************************************************************************************************************************************************************************/]]></Code>
+************************************************************************************************************************************************************************************************************/
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
