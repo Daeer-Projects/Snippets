@@ -17,7 +17,9 @@
 	"Begin End": {
 		"prefix": "be",
 		"body": [
-			"BEGIN\r\n\r\nEND"
+            "BEGIN",
+            "   $1",
+            "END"
 		],
 		"description": "Sets up the begin and end of a statement."
 	},
@@ -93,6 +95,20 @@
 		],
 		"description": "Shows the standard SQL script to select a top amount from a table or view."
 	},
+	"Select top x star from table with parameters": {
+		"prefix": "seltp",
+		"body": [
+			"SELECT TOP(${1:amount}) * FROM ${1:schema}.${2:table};"
+		],
+		"description": "Shows the standard SQL script to select a top amount from a table or view with parameters."
+	},
+	"Select count from table": {
+		"prefix": "selc",
+		"body": [
+			"SELECT COUNT(*) FROM ${1:schema}.${2:table};"
+		],
+		"description": "Shows the standard SQL script to select account from a table or view."
+	},
 
 	// Join statements:	
 	"Inner Join": {
@@ -105,7 +121,7 @@
 	"Inner Join with parameters": {
 		"prefix": "ijp",
 		"body": [
-			"INNER JOIN ${1:table} AS ${2:alias} ON ${3:other}.${4:column} = ${2:alias}.${5:column}"
+			"INNER JOIN ${1:schema}.${2:table} AS ${3:alias} ON ${4:other}.${5:otherColumn} = ${3:alias}.${6:thisColumn}"
 		],
 		"description": "Sets up the inner join statement with the parameters started."
 	},
@@ -119,7 +135,7 @@
 	"Left Join with parameters": {
 		"prefix": "ljp",
 		"body": [
-			"LEFT JOIN ${1:table} AS ${2:alias} ON ${3:other}.${4:column} = ${2:alias}.${5:column}"
+			"LEFT JOIN ${1:schema}.${2:table} AS ${3:alias} ON ${4:other}.${5:otherColumn} = ${3:alias}.${6:thisColumn}"
 		],
 		"description": "Sets up the left join statement with the parameters started."
 	},
@@ -133,7 +149,7 @@
 	"Right Join with parameters": {
 		"prefix": "rjp",
 		"body": [
-			"RIGHT JOIN ${1:table} AS ${2:alias} ON ${3:other}.${4:column} = ${2:alias}.${5:column}"
+			"RIGHT JOIN ${1:schema}.${2:table} AS ${3:alias} ON ${4:other}.${5:otherColumn} = ${3:alias}.${6:thisColumn}"
 		],
 		"description": "Sets up the right join statement with the parameters started."
 	},

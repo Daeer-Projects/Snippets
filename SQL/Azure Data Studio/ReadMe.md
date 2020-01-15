@@ -12,12 +12,13 @@ The Azure Data Studio has many snippets already provided, but I found it was lac
 
 ## Installation
 
-1. Click the "Settings" icon
-2. Click the "User Snippets" option
-3. Select the "sql.json" file
-4. Copy and paste in the snippets you want to use into the file
-5. Save the file
-6. Snippet away!
+1. Use CTRL + SHIFT + P to open the quick search
+2. Type "snippets" into the search
+3. Select the "Preferences: Configure User Snippets"
+4. Select the "sql.json" file
+5. Copy and paste in the snippets you want to use into the file
+6. Save the file
+7. Snippet away!
 
 ## Snippets
 
@@ -30,6 +31,8 @@ The Azure Data Studio has many snippets already provided, but I found it was lac
 * iftce - If column does not exist
 * ssf - SELECT * FROM set up
 * selt - SELECT TOP {value} FROM set up
+* seltp - SELECT TOP {value} FROM schema.table
+* selc - SELECT COUNT(*) FROM schema.table
 * ij - INNER JOIN set up
 * ijp - INNER JOIN set up with parameters
 * lj - LEFT JOIN set up
